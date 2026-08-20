@@ -16,10 +16,12 @@ cp .env.example .env
 ```bash
 cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --port 8001
 ```
 
-后端运行在 http://localhost:8000，Swagger 文档在 http://localhost:8000/docs
+后端运行在 http://localhost:8001，Swagger 文档在 http://localhost:8001/docs
+
+> 生产部署（服务器）请参考 [DEPLOY.md](./DEPLOY.md)。
 
 ### 3. 启动前端
 
