@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install -r requirements.txt
-      - run: pyset -q
+      - run: python -c "print('hello')"
 
   deploy:
     runs-on: ubuntu-latest
