@@ -5,7 +5,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: pip install -r requirements.txt
+      - uses: actions/checkout@v4
+      - run: pip install -r backend/requirements.txt
       - run: python -c "print('hello')"
 
   deploy:
